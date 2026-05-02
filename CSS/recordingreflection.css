@@ -1,0 +1,477 @@
+/******************************/
+
+/* Oral Histories */
+
+/******************************/
+
+/* Common Styles */
+
+body {
+    background-color: var(--Dark-Brown) !important;
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+}
+
+.flex-wrapper-wide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100%;
+}
+
+/* Text Overlay */
+
+.text-overlay {
+  background-color: transparent;
+  position: relative;
+  z-index: 2; 
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  overscroll-behavior-y: contain;
+}
+
+#div-one {
+    height: 200vh;
+    background-color: transparent;
+}
+
+#div-two {
+    height: 200vh;
+    background-color: transparent;
+}
+
+#div-three {
+    height: 200vh;
+    background-color: transparent;
+}
+
+#div-four {
+    height: 200vh;
+    background-color: transparent;
+}
+
+#div-five {
+    height: 200vh;
+    background-color: transparent;
+}
+
+#div-six {
+    height: 200vh;
+    background-color: transparent;
+}
+
+/* Section One */
+
+.section-one {
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    z-index: 0;
+    opacity: 1;
+    transition: all 2s ease;
+    margin-top: 2rem;
+}
+
+.section-one.hide {
+    opacity: 0;
+}
+
+.title-img-holder {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.section-one img {
+    display: block;
+    width: 60rem;
+    border-radius: .5rem;
+    z-index: 2;
+    box-shadow: rgba(255, 255, 255, 0.2) 0rem .5rem 2rem;
+}
+
+.title-img-holder div {
+    position: absolute;
+    bottom: 1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-one h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 4.5rem;
+    text-shadow: 0rem 0.5rem 2rem rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-family: 'MartinDisplayBold', Fallback, sans-serif;
+    letter-spacing: .05rem;
+    margin-bottom: 2rem;
+}
+
+.section-one h2 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 2rem;
+    text-shadow: 0rem 0.5rem 2rem rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-family: var(--Bodoni);
+    letter-spacing: .05rem;
+    text-align: center;
+}
+
+/* Section Two & Three */
+
+.section-two {
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    opacity: 0;
+    transition: all 2s ease;
+    margin-top: 2rem;
+    /* z-index: 1; */
+}
+
+.section-two.show {
+    opacity: 1;
+}
+
+.section-two .text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 1.5rem;
+    z-index: 5;
+    position: relative;
+}
+
+.section-two .text-block h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    text-shadow: 0rem 0.5rem 2rem rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-family: 'MartinDisplayBold', Fallback, sans-serif;
+    letter-spacing: .05rem;
+    text-align: center;
+}
+
+.section-two .text-block span {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    text-shadow: 0rem 0.5rem 2rem rgba(255, 255, 255, 0.2);
+    color: var(--Background);
+    font-family: 'MartinDisplayBold', Fallback, sans-serif;
+    letter-spacing: .05rem;
+    text-align: center;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.section-two .text-block span:hover {
+    color: var(--Background-Alt)
+}
+
+/* .section-two .text-block:first-of-type {
+    z-index: 10;
+    position: relative;
+} */
+
+/* Section Three */
+
+.section-three {
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    opacity: 0;
+    transition: all 2s ease;
+    margin-top: 2rem;
+}
+
+.section-three.show {
+    opacity: 1;
+}
+
+.section-three .text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 1.5rem;
+}
+
+.section-three .text-block h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 1.5rem 0;
+    text-shadow: 0rem 0.5rem 2rem rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-family: 'MartinDisplayBold', Fallback, sans-serif;
+    letter-spacing: .05rem;
+    text-align: center;
+}
+
+/* Section Four */
+
+.section-four {
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    /* z-index: 0; */
+    opacity: 0;
+    transition: all 2s ease;
+    margin-top: 2rem;
+}
+
+.section-four.show {
+    opacity: 1;
+}
+
+.section-four .column-holder {
+    display: flex;
+    gap: 4rem;
+}
+
+.section-four .column {
+    flex: 1;
+}
+
+.section-four .column h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2rem;
+    text-shadow: 0rem 0.5rem 2rem rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-family: 'MartinDisplayBold', Fallback, sans-serif;
+    letter-spacing: .05rem;
+}
+
+.section-four .column p {
+    font-family: var(--Bodoni);
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 1rem 0;
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: .02rem;
+    cursor: default;
+}
+
+/* .section-four .column:first-child {
+    padding: 4rem;
+    margin: 4rem 0;
+} */
+
+/* Soundbite Recorder */
+
+.speakpipe-holder {
+    background: linear-gradient(var(--Background), var(--Background-Alt));
+    padding: 1rem;
+    border-radius: .5rem;
+    width: 100%;
+    box-shadow: rgba(255, 255, 255, 0.2) 0rem .5rem 2rem;
+    margin-top: 4rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center; 
+    height: auto;
+    z-index: 5;
+}
+
+
+/* Section Five */
+
+.section-five {
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    opacity: 0;
+    transition: all 2s ease;
+    margin-top: 2rem;
+}
+
+.section-five.show {
+    opacity: 1;
+}
+
+.section-five .text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.section-five .text-block h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 4.5rem;
+    text-shadow: 0rem 0.5rem 2rem rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-family: 'MartinDisplayBold', Fallback, sans-serif;
+    letter-spacing: .05rem;
+    margin-top: 3rem;
+}
+
+.section-five .text-block h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2rem;
+    text-shadow: 0rem 0.5rem 2rem rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-family: 'MartinDisplayBold', Fallback, sans-serif;
+    letter-spacing: .05rem;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+/* Section Six */
+
+.section-six {
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: absolute;
+    opacity: 0;
+    transition: all 2s ease;
+    margin-top: 2rem;
+}
+
+.section-six.show {
+    opacity: 1;
+}
+
+.section-six .column-holder {
+    display: flex;
+    gap: 4rem;
+
+}
+
+.section-six .column {
+    flex: 1;
+}
+
+.section-six .column:first-child {
+    z-index: 3;
+}
+
+.section-six .column h3 {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 2rem;
+    text-shadow: 0rem 0.5rem 2rem rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-family: 'MartinDisplayBold', Fallback, sans-serif;
+    letter-spacing: .05rem;
+}
+
+.section-six .column p {
+    font-family: var(--Bodoni);
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 2rem 0;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: .02rem;
+    cursor: default;
+}
+
+.section-six .column p:last-child {
+    font-family: var(--Bodoni);
+    font-size: .8rem;
+    color: #fff;
+    margin: .75rem 0;
+    font-weight: 400;
+    line-height: 1.35rem;
+    letter-spacing: .02rem;
+    cursor: default;
+    text-align: center;
+}
+
+.section-six img {
+    width: 100%;
+    border-radius: .5rem;
+    z-index: 2;
+    box-shadow: rgba(255, 255, 255, 0.2) 0rem .5rem 2rem;
+    cursor: pointer;
+}
+
+.section-six ul {
+    list-style-type: none;
+    margin: 2rem 0;
+}
+
+.section-six li a {
+    font-family: var(--Bodoni);
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 400;
+    line-height: 2rem;
+    letter-spacing: .02rem;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.section-six li a:hover {
+    color: var(--Background);
+}
+
