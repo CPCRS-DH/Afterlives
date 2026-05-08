@@ -24,8 +24,52 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 85%;
     height: 100%;
+}
+
+/* Scroll end message */
+
+.scroll-end-message {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+    transition: all 2s ease;
+    opacity: 0;
+}
+
+.show-message {
+    opacity: 1;
+}
+
+.scroll-end-message p {
+    font-family: var(--Bodoni);
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 1rem 0;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: .02rem;
+    cursor: default;
+}
+
+.scroll-end-message a {
+    font-family: var(--Bodoni);
+    font-size: 1.1rem;
+    color: var(--Background-Blue-Alt);
+    margin: 1rem 0;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: .02rem;
+    cursor: pointer;
+    transition: color 300ms ease;
+}
+
+.scroll-end-message a:hover {
+    color: var(--Background-Blue-Dark);
 }
 
 /* Text Overlay */
@@ -41,32 +85,32 @@ body {
 }
 
 #div-one {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
 #div-two {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
 #div-three {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
 #div-four {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
 #div-five {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
 #div-six {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
@@ -186,7 +230,7 @@ body {
     color: #fff;
     margin: 1rem 0;
     font-weight: 400;
-    line-height: 2rem;
+    line-height: 1.5rem;
     letter-spacing: .02rem;
     cursor: default;
 }
@@ -246,14 +290,14 @@ body {
     color: #fff;
     margin: 1rem 0rem;
     font-weight: 400;
-    line-height: 2rem;
+    line-height: 1.2rem;
     letter-spacing: .02rem;
     cursor: default;
 }
 
 .section-three a {
     font-family: var(--Bodoni);
-    color: var(--Background);
+    color: var(--Background-Blue-Alt);
     font-weight: 500;
     font-size: 1.2rem;
     transition: color .3s;
@@ -262,7 +306,7 @@ body {
 }
 
 .section-three a:hover {
-    color: var(--Background)
+    color: var(--Background-Blue-Dark)
 }
 
 .link {
@@ -361,7 +405,9 @@ body {
 
 .section-five .column:first-child {
     flex: 1;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .section-five .column:last-child {
@@ -391,7 +437,7 @@ body {
     color: #fff;
     margin: 1rem 0;
     font-weight: 400;
-    line-height: 2rem;
+    line-height: 1.5rem;
     letter-spacing: .02rem;
     cursor: default;
 }
@@ -425,7 +471,9 @@ body {
 
 .section-six .column:first-child {
     flex: 1;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
 }
 
 .section-six .column:last-child {
@@ -455,7 +503,7 @@ body {
     color: #fff;
     margin: 1rem 0;
     font-weight: 400;
-    line-height: 2rem;
+    line-height: 1.5rem;
     letter-spacing: .02rem;
     cursor: default;
 }
@@ -466,8 +514,8 @@ body {
     position: relative;
     /* max-width: 95%; */
     overflow: hidden;
-    width: 100%;
-    height: 500px;
+    width: 80%;
+    height:400px;
     border-radius: 0.5rem;
     box-shadow: rgba(255, 255, 255, 0.2) 0rem .5rem 2rem;
     z-index: 999;

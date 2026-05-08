@@ -40,75 +40,113 @@ body {
 }
 
 #div-one {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
 #div-two {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
 #div-three {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
 #div-four {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
 #div-five {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
 #div-six {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
 #div-seven {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
 #div-eight {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
 #div-nine {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
 #div-ten {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
 #div-eleven {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
 #div-twelve {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
 #div-thirteen {
-    height: 200vh;
+    height: 125vh;
     background-color: transparent;
 }
 
-#div-fourteen {
-    height: 200vh;
-    background-color: transparent;
+/* Scroll end message */
+
+.scroll-end-message {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 10;
+    transition: all 2s ease;
+    opacity: 0;
 }
 
+.show-message {
+    opacity: 1;
+}
+
+.scroll-end-message p {
+    font-family: var(--Bodoni);
+    font-size: 1.1rem;
+    color: #fff;
+    margin: 1rem 0;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: .02rem;
+    cursor: default;
+}
+
+.scroll-end-message a {
+    font-family: var(--Bodoni);
+    font-size: 1.1rem;
+    color: var(--Background-Blue-Alt);
+    margin: 1rem 0;
+    font-weight: 600;
+    line-height: 1.5rem;
+    letter-spacing: .02rem;
+    cursor: pointer;
+    transition: color 300ms ease;
+}
+
+.scroll-end-message a:hover {
+    color: var(--Background-Blue-Dark);
+}
 
 /* Section One */
 
@@ -519,15 +557,31 @@ body {
     opacity: 1;
 }
 
+.section-nine img {
+    width: 80%;
+    border-radius: .5rem;
+    z-index: 2;
+    box-shadow: rgba(255, 255, 255, 0.2) 0rem .5rem 2rem;
+    cursor: pointer;
+}
+
+.section-nine .image-caption {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .section-nine p {
     font-family: var(--Bodoni);
-    font-size: 1.1rem;
+    font-size: .8rem;
     color: #fff;
-    margin: 1rem 0;
+    margin: .75rem 0;
     font-weight: 400;
-    line-height: 1.5rem;
+    line-height: 1.35rem;
     letter-spacing: .02rem;
     cursor: default;
+    text-align: center;
 }
 
 /* Section Ten */
@@ -553,34 +607,18 @@ body {
     opacity: 1;
 }
 
-.section-ten img {
-    width: 80%;
-    border-radius: .5rem;
-    z-index: 2;
-    box-shadow: rgba(255, 255, 255, 0.2) 0rem .5rem 2rem;
-    cursor: pointer;
-}
-
-.section-ten .image-caption {
-    width: 40%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 .section-ten p {
     font-family: var(--Bodoni);
-    font-size: .8rem;
+    font-size: 1.1rem;
     color: #fff;
-    margin: .75rem 0;
+    margin: 1rem 0;
     font-weight: 400;
-    line-height: 1.35rem;
+    line-height: 1.5rem;
     letter-spacing: .02rem;
     cursor: default;
-    text-align: center;
 }
 
-/* Section Eleven */
+/* Section eleven */
 
 .section-eleven {
     bottom: 0;
@@ -603,12 +641,22 @@ body {
     opacity: 1;
 }
 
-.section-eleven p {
+.section-eleven p:first-child {
     font-family: var(--Bodoni);
     font-size: 1.1rem;
     color: #fff;
     margin: 1rem 0;
-    font-weight: 400;
+    font-weight: 500;
+    line-height: 1.5rem;
+    letter-spacing: .02rem;
+    cursor: default;
+}
+
+.section-eleven p:last-child {
+    font-family: var(--Bodoni);
+    font-size: 1rem;
+    color: #fff;
+    font-weight: 300;
     line-height: 1.5rem;
     letter-spacing: .02rem;
     cursor: default;
@@ -637,25 +685,36 @@ body {
     opacity: 1;
 }
 
-.section-twelve p:first-child {
-    font-family: var(--Bodoni);
-    font-size: 1.1rem;
-    color: #fff;
-    margin: 1rem 0;
-    font-weight: 500;
-    line-height: 1.5rem;
-    letter-spacing: .02rem;
-    cursor: default;
+/* .section-thirteen img {
+    width: 70%;
+    border-radius: .5rem;
+    z-index: 2;
+    box-shadow: rgba(255, 255, 255, 0.2) 0rem .5rem 2rem;
+    cursor: pointer;
+} */
+
+.section-twelve img {
+    width: 100%;
+    border-radius: .5rem;
+    z-index: 2;
+    box-shadow: rgba(255, 255, 255, 0.2) 0rem .5rem 2rem;
+    cursor: pointer;
 }
 
-.section-twelve p:last-child {
+.section-twelve .image-caption {
+    width: 70%;
+}
+
+.section-twelve p {
     font-family: var(--Bodoni);
-    font-size: 1rem;
+    font-size: .8rem;
     color: #fff;
-    font-weight: 300;
-    line-height: 1.5rem;
+    margin: .75rem 0;
+    font-weight: 400;
+    line-height: 1.35rem;
     letter-spacing: .02rem;
     cursor: default;
+    text-align: center;
 }
 
 /* Section Thirteen */
@@ -681,62 +740,7 @@ body {
     opacity: 1;
 }
 
-/* .section-thirteen img {
-    width: 70%;
-    border-radius: .5rem;
-    z-index: 2;
-    box-shadow: rgba(255, 255, 255, 0.2) 0rem .5rem 2rem;
-    cursor: pointer;
-} */
-
-.section-thirteen img {
-    width: 100%;
-    border-radius: .5rem;
-    z-index: 2;
-    box-shadow: rgba(255, 255, 255, 0.2) 0rem .5rem 2rem;
-    cursor: pointer;
-}
-
-.section-thirteen .image-caption {
-    width: 70%;
-}
-
-.section-thirteen p {
-    font-family: var(--Bodoni);
-    font-size: .8rem;
-    color: #fff;
-    margin: .75rem 0;
-    font-weight: 400;
-    line-height: 1.35rem;
-    letter-spacing: .02rem;
-    cursor: default;
-    text-align: center;
-}
-
-/* Section Fourteen */
-
-.section-fourteen {
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    position: absolute;
-    z-index: 0;
-    opacity: 0;
-    transition: all 2s ease;
-    margin-top: 2rem;
-}
-
-.section-fourteen.show {
-    opacity: 1;
-}
-
-.section-fourteen p:first-child {
+.section-thirteen p:first-child {
     font-family: var(--Bodoni);
     font-size: 1.1rem;
     color: #fff;
@@ -747,7 +751,7 @@ body {
     cursor: default;
 }
 
-.section-fourteen p:last-child {
+.section-thirteen p:last-child {
     font-family: var(--Bodoni);
     font-size: 1rem;
     color: #fff;

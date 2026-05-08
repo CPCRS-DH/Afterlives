@@ -1,6 +1,7 @@
 //ScrollTrigger Script
 
 const downArrow = document.querySelector('.down-arrow');
+const endMessage = document.querySelector('.scroll-end-message');
 
 const sectionOne = document.querySelector('.section-one');
 const sectionTwo = document.querySelector('.section-two');
@@ -39,11 +40,13 @@ function modify(el) {
     sectionFour.classList.add('show');
     sectionFive.classList.remove('show');
     downArrow.classList.remove('hide');
+    endMessage.classList.remove('show-message');
   }
   if (el.id === "div-five") {
     sectionFour.classList.remove('show');
     sectionFive.classList.add('show');
     downArrow.classList.add('hide');
+    endMessage.classList.add('show-message');
   }
 }
 

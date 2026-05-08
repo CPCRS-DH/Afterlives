@@ -10,6 +10,7 @@ const box = document.querySelector(".text-overlay");
 
 //ScrollTrigger Script
 const downArrow = document.querySelector('.down-arrow');
+const endMessage = document.querySelector('.scroll-end-message');
 
 const sectionOne = document.querySelector('.section-one');
 const sectionTwo = document.querySelector('.section-two');
@@ -53,11 +54,13 @@ function modify(el) {
     sectionFive.classList.add('show');
     sectionSix.classList.remove('show');
     downArrow.classList.remove('hide');
+    endMessage.classList.remove('show-message');
   }
   if (el.id === "div-six") {
     sectionFive.classList.remove('show');
     sectionSix.classList.add('show');
     downArrow.classList.add('hide');
+    endMessage.classList.add('show-message');
   }
 }
 

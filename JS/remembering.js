@@ -1,6 +1,7 @@
 //ScrollTrigger Script
 
 const downArrow = document.querySelector('.down-arrow');
+const endMessage = document.querySelector('.scroll-end-message');
 
 const sectionOne = document.querySelector('.section-one');
 const sectionTwo = document.querySelector('.section-two');
@@ -15,7 +16,6 @@ const sectionTen = document.querySelector('.section-ten');
 const sectionEleven = document.querySelector('.section-eleven');
 const sectionTwelve = document.querySelector('.section-twelve');
 const sectionThirteen = document.querySelector('.section-thirteen');
-const sectionFourteen = document.querySelector('.section-fourteen');
 
 let io = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
@@ -86,17 +86,15 @@ function modify(el) {
     sectionEleven.classList.remove('show');
     sectionTwelve.classList.add('show');
     sectionThirteen.classList.remove('show');
+    downArrow.classList.remove('hide');
+    endMessage.classList.remove('show-message');
   }
   if (el.id === "div-thirteen") {
     sectionTwelve.classList.remove('show');
     sectionThirteen.classList.add('show');
-    sectionFourteen.classList.remove('show');
-    downArrow.classList.remove('hide');
-  }
-  if (el.id === "div-fourteen") {
-    sectionThirteen.classList.remove('show');
-    sectionFourteen.classList.add('show');
+    // sectionFourteen.classList.remove('show');
     downArrow.classList.add('hide');
+    endMessage.classList.add('show-message');
   }
 }
 
@@ -113,4 +111,3 @@ io.observe(document.querySelector('#div-ten'));
 io.observe(document.querySelector('#div-eleven'));
 io.observe(document.querySelector('#div-twelve'));
 io.observe(document.querySelector('#div-thirteen'));
-io.observe(document.querySelector('#div-fourteen'));
